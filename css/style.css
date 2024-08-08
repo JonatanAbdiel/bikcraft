@@ -1,0 +1,298 @@
+@import "/css/header.css";
+@import "/css/introducao.css";
+@import "/css/bicicletas-lista.css";
+@import "/css/tecnologia.css";
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+img[src$=".jpg"] {
+  border: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+/* GLOBAL COMPONENTS */
+
+.botao {
+  color: #332200;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  text-transform: uppercase;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  line-height: 1.125;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.botao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 600px) {
+  .botao {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+
+.link {
+  display: inline-block;
+  color: var(--cor-p1);
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: currentColor;
+}
+
+.link:hover {
+  color: var(--cor-0);
+  transition: 0.3s;
+}
+
+/* COLORS */
+
+:root {
+  --cor-0: #fff;
+  --cor-1: #f7f7f7;
+  --cor-2: #ededed;
+  --cor-3: #dedede;
+  --cor-4: #ccc;
+  --cor-5: #b2b2b2;
+  --cor-6: #9c9c9c;
+  --cor-7: #717171;
+  --cor-8: #595959;
+  --cor-9: #404040;
+  --cor-10: #2e2e2e;
+  --cor-11: #111;
+  --cor-12: #000;
+  --cor-p1: #ffbb00;
+  --cor-p2: #e4a30b;
+  --cor-p3: #a66f00;
+  --cor-p4: #664400;
+  --cor-p5: #332200;
+}
+
+.color-0 {
+  color: var(--cor-0);
+}
+
+.color-1 {
+  color: var(--cor-1);
+}
+
+.color-2 {
+  color: var(--cor-2);
+}
+
+.color-3 {
+  color: var(--cor-3);
+}
+
+.color-4 {
+  color: var(--cor-4);
+}
+
+.color-5 {
+  color: var(--cor-5);
+}
+
+.color-6 {
+  color: var(--cor-6);
+}
+
+.color-7 {
+  color: var(--cor-7);
+}
+
+.color-8 {
+  color: var(--cor-8);
+}
+
+.color-9 {
+  color: var(--cor-9);
+}
+
+.color-10 {
+  color: var(--cor-10);
+}
+
+.color-11 {
+  color: var(--cor-11);
+}
+
+.color-12 {
+  color: var(--cor-12);
+}
+
+.cor-p1 {
+  color: var(--cor-p1);
+}
+
+.cor-p2 {
+  color: var(--cor-p2);
+}
+.cor-p3 {
+  color: var(--cor-p3);
+}
+.cor-p4 {
+  color: var(--cor-p4);
+}
+.cor-p5 {
+  color: var(--cor-p5);
+}
+
+/* Font Types */
+
+.font-1-xxl {
+  font-size: 4rem;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.font-1-xl {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.font-1-l {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.font-2-l {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.font-2-l-b {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.font-1-m {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.225rem;
+  line-height: 1.125rem;
+}
+
+.font-1-m-b {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.225rem;
+  line-height: 1.125rem;
+}
+
+.font-2-m {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.125;
+}
+
+.font-1-s {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.font-2-s {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.font-2-xs {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.125;
+}
+
+.font-1-xs {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.125;
+}
+
+/* Responsive Tipography */
+
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+  .font-2-1,
+  .font-2-1-b {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-xxl {
+    font-size: 2rem;
+  }
+
+  .font-1-xl,
+  .font-2-xl {
+    font-size: 1.5rem;
+  }
+}
