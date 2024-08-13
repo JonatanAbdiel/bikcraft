@@ -3,6 +3,7 @@
 @import "/css/bicicletas-lista.css";
 @import "/css/tecnologia.css";
 @import "/css/parceiros.css";
+@import "/css/depoimento.css";
 
 body {
   margin: 0px;
@@ -33,7 +34,8 @@ a {
 h1,
 h2,
 h3,
-p {
+p,
+blockquote {
   margin: 0px;
 }
 
