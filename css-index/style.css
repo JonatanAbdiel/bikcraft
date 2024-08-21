@@ -1,11 +1,15 @@
-@import "/css/header.css";
-@import "/css/introducao.css";
-@import "/css/bicicletas-lista.css";
-@import "/css/tecnologia.css";
-@import "/css/parceiros.css";
-@import "/css/depoimento.css";
-@import "/css/seguros.css";
-@import "/css/footer.css";
+@import "/css-index/header.css";
+@import "/css-index/introducao.css";
+@import "/css-index/bicicletas-lista.css";
+@import "/css-index/tecnologia.css";
+@import "/css-index/parceiros.css";
+@import "/css-index/depoimento.css";
+@import "/css-index/seguros.css";
+@import "/css-index/footer.css";
+@import "/css-bicicletas/bicicletas.css";
+
+/* Abaixo Imports de Termos */
+@import "/css-termos/termos.css";
 
 body {
   margin: 0px;
@@ -63,6 +67,20 @@ blockquote {
   color: var(--cor-2);
 }
 
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(/img/icones/seta.svg);
+}
+
+.botao.seta:hover:after {
+  transform: translateX(4px);
+  transition: transform 0.2s;
+ }
+
 .botao.secundario:hover {
   background: var(--cor-9);
 }
@@ -79,13 +97,38 @@ blockquote {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 @media (max-width: 600px) {
   .botao {
     padding: 12px 16px;
     font-size: 16px;
   }
 }
+
+/* Titulos internos */
+
+.titulo-bg {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--cor-11);
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .titulo p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
+
+/* XXXXXXXXXXXXXXXXXXX */
 
 .link {
   display: inline-block;
