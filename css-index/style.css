@@ -7,9 +7,10 @@
 @import "/css-index/seguros.css";
 @import "/css-index/footer.css";
 @import "/css-bicicletas/bicicletas.css";
-
-/* Abaixo Imports de Termos */
+@import "/css-seguros/seguros.css";
+@import "/css-seguros/vantagens.css/";
 @import "/css-termos/termos.css";
+@import "/css-seguros/perguntas.css";
 
 body {
   margin: 0px;
