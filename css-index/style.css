@@ -8,9 +8,9 @@
 @import "/css-index/footer.css";
 @import "/css-bicicletas/bicicletas.css";
 @import "/css-seguros/seguros.css";
-@import "/css-seguros/vantagens.css/";
 @import "/css-termos/termos.css";
 @import "/css-seguros/perguntas.css";
+@import "/css-seguros/vantagens.css";
 
 body {
   margin: 0px;
@@ -42,7 +42,8 @@ h1,
 h2,
 h3,
 p,
-blockquote {
+blockquote,
+dd {
   margin: 0px;
 }
 
