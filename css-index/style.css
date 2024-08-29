@@ -11,6 +11,7 @@
 @import "/css-termos/termos.css";
 @import "/css-seguros/perguntas.css";
 @import "/css-seguros/vantagens.css";
+@import "/css-bicicletas/nimbus.css";
 
 body {
   margin: 0px;
@@ -272,6 +273,13 @@ dd {
 
 .font-2-l {
   font-size: 1.5rem;
+  line-height: 1.125;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.font-2-xl {
+  font-size: 2.25rem;
   line-height: 1.125;
   font-family: "Roboto";
   font-weight: 400;
