@@ -12,6 +12,7 @@
 @import "/css-seguros/perguntas.css";
 @import "/css-seguros/vantagens.css";
 @import "/css-bicicletas/nimbus.css";
+@import "/bicicletas/seguro.css";
 
 body {
   margin: 0px;
